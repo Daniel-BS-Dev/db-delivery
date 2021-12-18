@@ -1,14 +1,11 @@
 package com.daniel.dbdeliver.entities;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -19,21 +16,18 @@ public class Product implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String nameString;
+	private String name;
 	private Double price;
 	private String description;
 	private String imageUri;
-	
-	@ManyToMany(mappedBy="products")
-	private List<Order> orders = new ArrayList<>();
 	
 	public Product() {
 	
 	}
 
-	public Product(Long id, String nameString, Double price, String description, String imageUri) {
+	public Product(Long id, String name, Double price, String description, String imageUri) {
 		this.id = id;
-		this.nameString = nameString;
+		this.name = name;
 		this.price = price;
 		this.description = description;
 		this.imageUri = imageUri;
@@ -48,11 +42,11 @@ public class Product implements Serializable {
 	}
 
 	public String getNameString() {
-		return nameString;
+		return name;
 	}
 
 	public void setNameString(String nameString) {
-		this.nameString = nameString;
+		this.name = nameString;
 	}
 
 	public Double getPrice() {
@@ -79,9 +73,6 @@ public class Product implements Serializable {
 		this.imageUri = imageUri;
 	}
 	
-	public List<Order> getOrders() {
-		return orders;
-	}
 
 	@Override
 	public int hashCode() {

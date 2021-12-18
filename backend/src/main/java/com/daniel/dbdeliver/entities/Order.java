@@ -28,7 +28,7 @@ public class Order implements Serializable {
 	private Long id;
 	private String address;
 	private Double latitude;
-	private Double longitutde;
+	private Double longitude;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant moment;
@@ -44,11 +44,11 @@ public class Order implements Serializable {
 	
 	}
 
-	public Order(Long id, String address, Double latitude, Double longitutde, Instant moment, OrderStatus status) {
+	public Order(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status) {
 		this.id = id;
 		this.address = address;
 		this.latitude = latitude;
-		this.longitutde = longitutde;
+		this.longitude = longitude;
 		this.moment = moment;
 		this.status = status;
 	}
@@ -78,11 +78,11 @@ public class Order implements Serializable {
 	}
 
 	public Double getLongitutde() {
-		return longitutde;
+		return longitude;
 	}
 
 	public void setLongitutde(Double longitutde) {
-		this.longitutde = longitutde;
+		this.longitude = longitutde;
 	}
 
 	public Instant getMoment() {
