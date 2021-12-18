@@ -1,0 +1,18 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: #DA5C5C;
+}
+
+.header-content{
+    display: flex;
+    margin-left: 45px;
+    
+}
+
+.header-title{
+    font-style: italic;
+    margin-left: 10px;
+    color: bisque;
+}
