@@ -18,14 +18,14 @@ import com.daniel.dbdeliver.entities.repositories.ProductRepository;
 
 @Service
 public class OrderService {
-	
+
 	@Autowired
 	private OrderRepository repository;
-	
+
 	@Autowired
 	private ProductRepository productRepository;
 
-	@Transactional(readOnly=true)
+	@Transactional(readOnly = true)
 	public List<OrderDTO> findAll() {
 		List<Order> list = repository.findAllWithproducts();
 		return list.stream().map(x -> new OrderDTO(x, x.getProducts())).collect(Collectors.toList());
@@ -39,16 +39,16 @@ public class OrderService {
 		entity.setLongitutde(dto.getLongitude());
 		entity.setMoment(Instant.now());
 		entity.setStatus(OrderStatus.PENDING);
-		
-		for(ProductDTO id: dto.getListProductDTO()) {
+
+		for (ProductDTO id : dto.getListProductDTO()) {
 			Product productId = productRepository.getById(id.getId());
 			entity.getProducts().add(productId);
 		}
-		
-	    entity = repository.save(entity);
-	    return new OrderDTO(entity);
+
+		entity = repository.save(entity);
+		return new OrderDTO(entity);
 	}
-	
+
 	@Transactional
 	public OrderDTO update(Long id) {
 		Order entity = repository.getById(id);
