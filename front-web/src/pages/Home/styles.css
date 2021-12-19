@@ -11,6 +11,7 @@
 
 .home-container{
     display: block;
+    min-height: calc(100vh - 90px);
     overflow-y: hidden;
 }
 
@@ -40,7 +41,7 @@
 }
 
 .home-button{
-    margin-top:30px;
+    margin-top:40px;
     width: 350px;
     height: 70px;
     letter-spacing: -0.015em;
