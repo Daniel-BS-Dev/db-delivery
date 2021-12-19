@@ -1,3 +1,14 @@
+@keyframes anima2 {
+    from{
+        width: 350px;
+        background: #DA5C5C;
+    }
+    to{
+        width: 348px;
+        background: #a74b4b;
+    }
+}
+
 .home-container{
     display: block;  
     
@@ -10,7 +21,7 @@
 
 .home-container-title{
     display: block;
-    width: 450px;
+    width: 490px;
 }
 
 .home-title{
@@ -30,38 +41,15 @@
 
 .home-button{
     margin-top:60px;
-    padding: 20px 55px;
+    width: 350px;
+    height: 70px;
     letter-spacing: -0.015em;
     font-size: 24px;
     line-height: 33px;
     color: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 5px;
     background: #DA5C5C;
     border: none;
-}
-
-.home-footer{
-    margin-top: 100px;
-    height: 85px;
-    background: #263238;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.home-footer-title{
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    color: #FFFFFF;
-    padding-bottom: 10px;
-}
-
-.home-footer-images{
-    display: flex;
-    justify-content: center;
-    
 }
 
 .imageView{
@@ -69,14 +57,9 @@
 }
 
 .home-button:hover{
-    cursor: pointer;
-    background-color: #DA5C4a;
+    animation:anima2 0.5s ease-in;
 }
 
-.imgLinkedin, .imgGit{
-    width: 70px;
-    height: 25px;
-}
 
 @media (max-width: 950px) {
     .home-content{
@@ -102,11 +85,12 @@
         font-size: 45px;
         line-height: 48px;
         letter-spacing: -0.015em;
+        margin-bottom: 50px;
     
     }
 
     .home-subtitle{
-        margin-top: 0px;
+        margin-top: 50px;
      }
 
      .home-button{
