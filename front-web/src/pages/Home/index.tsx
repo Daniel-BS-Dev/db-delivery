@@ -1,7 +1,7 @@
 import {ReactComponent as Image} from '../../assets/Imagem.svg';
 import {ReactComponent as Instagram} from '../../assets/instagram.svg';
-import {ReactComponent as Youtube} from '../../assets/youtube.svg';
-
+import {ReactComponent as GitHub} from '../../assets/github.svg';
+import {ReactComponent as Linkedin} from '../../assets/linkedin.svg';
 import './styles.css';
 
 const Home = () => (
@@ -24,11 +24,12 @@ const Home = () => (
        <footer className='home-footer'>
           <div className="home-footer-container">
               <div className="home-footer-title">
-                 <span>App desenvolvido durante a 2ª ed. do evento <strong>Semana devsuperior</strong></span>
+                 <address>Daniel Benedito da Silva</address>
               </div>
               <div className="home-footer-images">
-                 <Instagram className='imgInstragram' />
-                 <Youtube />
+                 <Linkedin className='imgLinkedin'/>
+                 <Instagram  />
+                 <GitHub className='imgGit' />
               </div>
           </div>
       </footer>

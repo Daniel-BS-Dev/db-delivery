@@ -30,7 +30,7 @@
 
 .home-button{
     margin-top:60px;
-    padding: 20px 25px;
+    padding: 20px 55px;
     letter-spacing: -0.015em;
     font-size: 24px;
     line-height: 33px;
@@ -68,10 +68,15 @@
     display: none;
 }
 
-.imgInstragram{
-    margin-right: 10px;
+.home-button:hover{
+    cursor: pointer;
+    background-color: #DA5C4a;
 }
 
+.imgLinkedin, .imgGit{
+    width: 70px;
+    height: 25px;
+}
 
 @media (max-width: 950px) {
     .home-content{
