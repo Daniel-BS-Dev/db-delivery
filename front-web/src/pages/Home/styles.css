@@ -1,0 +1,122 @@
+.home-container{
+    display: block;  
+    
+}
+
+.home-content{
+    display: flex;
+    margin: 100px 200px; 
+}
+
+.home-container-title{
+    display: block;
+    width: 450px;
+}
+
+.home-title{
+    font-size: 55px;
+    line-height: 58px;
+    letter-spacing: -0.015em;
+    color: #263238;
+}
+
+.home-subtitle{
+   font-size: 24px;
+   line-height: 33px;
+   letter-spacing: -0.015em;
+   color: #9E9E9E;
+   margin-top: 40px;
+}
+
+.home-button{
+    margin-top:60px;
+    padding: 20px 25px;
+    letter-spacing: -0.015em;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    background: #DA5C5C;
+    border: none;
+}
+
+.home-footer{
+    margin-top: 100px;
+    height: 85px;
+    background: #263238;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-footer-title{
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.home-footer-images{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imageView{
+    display: none;
+}
+
+.imgInstragram{
+    margin-right: 10px;
+}
+
+
+@media (max-width: 950px) {
+    .home-content{
+        display: block;
+        margin: 50px 20px; 
+    }
+    .home-container-title{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .imageNone{
+        display: none;
+    }
+
+    .imageView{
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .home-title{
+        font-size: 45px;
+        line-height: 48px;
+        letter-spacing: -0.015em;
+    
+    }
+
+    .home-subtitle{
+        margin-top: 0px;
+     }
+
+     .home-button{
+        margin-top:30px;
+        padding: 20px 90px;
+        font-size: 20px;
+        line-height: 30px;
+        border-radius: 10px;
+        
+    }
+
+    .home-footer{
+        margin-top: 50px;
+        height: 85px;
+    
+    
+    }
+}
