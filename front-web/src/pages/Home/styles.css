@@ -10,13 +10,13 @@
 }
 
 .home-container{
-    display: block;  
-    
+    display: block;
+    overflow-y: hidden;
 }
 
 .home-content{
     display: flex;
-    margin: 100px 200px; 
+    margin: 50px 200px; 
 }
 
 .home-container-title{
@@ -40,7 +40,7 @@
 }
 
 .home-button{
-    margin-top:60px;
+    margin-top:30px;
     width: 350px;
     height: 70px;
     letter-spacing: -0.015em;
@@ -54,6 +54,10 @@
 
 .imageView{
     display: none;
+}
+
+.imageNone{
+    height: 396px;
 }
 
 .home-button:hover{

@@ -13,13 +13,11 @@
 }
 
 .home-footer{
-    margin-top: 100px;
     height: 85px;
     background: #263238;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid #DA5C5C;
     border-top: 3px solid #DA5C5C;
 
 }
@@ -58,11 +56,7 @@
 
    }
 
-
-@media (max-width: 950px) {
 .imgFooter{
-    animation: anima 5s linear 1s ;
+    animation: anima 5s linear 3s ;
     
-
-   }
 }
