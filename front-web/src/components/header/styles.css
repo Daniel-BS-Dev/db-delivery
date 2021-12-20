@@ -11,17 +11,13 @@
 }
 
 @keyframes animaHeader {
-  0% {
-    color: #fff;
-    width: 100%;
+  from {
+    opacity: 0;
+    
   }
-  50% {
-    color: #eee;
-    width: 90%;
-  }
-  100% {
+  to {
     color: #fff;
-    width: 100%;
+    
   }
 }
 
@@ -63,12 +59,12 @@
 }
 
 .header-title:hover {
-  animation: animaHeader 1s linear;
+  animation: animaHeader 1s ease-in-out;
   
 }
 
 .imageHeader:hover {
-  animation: animaImage 2s linear;
+  animation: animaImage 2s ease-out;
 }
 
 @media (max-width: 850px) {
