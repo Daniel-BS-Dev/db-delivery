@@ -1,8 +1,14 @@
+import Footer from '../../components/Footer';
+import StepsNav from './stepsNav';
 import './styles.css';
 
 const Order = () => {
     return(
-      <h1>Order</h1>
+      <div className='order-container'>
+         <StepsNav />
+         order
+        
+      </div>
     );
 }
 
