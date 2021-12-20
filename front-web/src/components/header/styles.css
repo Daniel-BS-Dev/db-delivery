@@ -1,14 +1,47 @@
 @keyframes anima1 {
-  0% {transform: translateX(-300px);}
-  50%{transform: translateX(100px);}
-  100%{transform: translateX(45px);}
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(45px);
+  }
+}
+
+@keyframes animaHeader {
+  0% {
+    color: #fff;
+    width: 100%;
+  }
+  50% {
+    color: #eee;
+    width: 90%;
+  }
+  100% {
+    color: #fff;
+    width: 100%;
+  }
+}
+
+@keyframes animaImage {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .header-container {
   display: flex;
   align-items: center;
   height: 70px;
-  width:100%;
+  width: 100%;
   background: #da5c5c;
   border-bottom: 3px solid #000;
 }
@@ -23,11 +56,19 @@
   font-style: italic;
   margin-left: 10px;
   color: #fff;
+}
+
+.header-content {
+  animation: anima1 3s linear;
+}
+
+.header-title:hover {
+  animation: animaHeader 1s linear;
   
 }
 
-.header-content{
-  animation: anima1 3s linear ;
+.imageHeader:hover {
+  animation: animaImage 2s linear;
 }
 
 @media (max-width: 850px) {

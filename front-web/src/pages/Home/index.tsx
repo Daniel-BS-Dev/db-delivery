@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {ReactComponent as Image} from '../../assets/Imagem.svg';
 import Footer from '../../components/Footer';
 import './styles.css';
@@ -13,10 +14,12 @@ const Home = () => (
                <p className="home-subtitle">
                    Escolha o seu pedido e em poucos <br/>minutos levaremos na sua porta
                </p>
-               <button className="home-button">
-                   FAZER PEDIDO
-               </button>
-           </div>
+               <Link to="/order">
+                  <button className="home-button">
+                    FAZER PEDIDO
+                  </button>
+                </Link>
+            </div>
            <Image className='imageNone'/>
        </div>
        <Footer />
