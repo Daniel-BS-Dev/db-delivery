@@ -67,6 +67,13 @@
   animation: animaImage 2s ease-out;
 }
 
+@media (max-width: 449px) and (min-width:150px) {
+  .header-container {
+    height: 60px;
+    border-bottom: 2px solid #000;
+  }
+}
+
 @media (max-width: 850px) {
   .header-container {
     width: 100%;

@@ -13,7 +13,7 @@
 }
 
 .home-footer{
-    height: 85px;
+    height: 75px;
     background: #263238;
     display: flex;
     justify-content: center;
@@ -55,6 +55,7 @@
     
 
    }
+
 
 @media (max-width: 950px) {
 .imgFooter{

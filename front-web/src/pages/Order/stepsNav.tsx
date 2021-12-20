@@ -1,4 +1,3 @@
-import './styles.css';
 
 const StepsNav = () => {
     return (
@@ -6,10 +5,10 @@ const StepsNav = () => {
            <h3 className='nav-title'>
                SIGA AS<br/>ETAPAS
            </h3>
-           <div className='nav-subtitle'>
-               <p><strong>1</strong>  Selecione os produtos e localização.</p>
-               <p><strong>2</strong>  Depois clique em <span>“ENVIAR PEDIDO”</span></p>
-           </div>
+           <ul className='nav-subtitle'>
+               <li><strong>1</strong>  Selecione os produtos e localização.</li>
+               <li><strong>2</strong>  Depois clique em <span>“ENVIAR PEDIDO”</span></li>
+           </ul>
            <button className='nav-button'>
                Pedido enviado com sucesso! Nº 5
            </button>

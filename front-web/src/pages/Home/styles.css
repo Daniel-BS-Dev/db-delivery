@@ -1,116 +1,168 @@
 @keyframes anima2 {
-    from{
-        width: 350px;
-        background: #DA5C5C;
-    }
-    to{
-        width: 348px;
-        background: #a74b4b;
-    }
-}
-
-.home-container{
-    display: block;
-    min-height: calc(100vh - 90px);
-    overflow-y: hidden;
-}
-
-.home-content{
-    display: flex;
-    margin: 50px 200px; 
-}
-
-.home-container-title{
-    display: block;
-    width: 490px;
-}
-
-.home-title{
-    font-size: 55px;
-    line-height: 58px;
-    letter-spacing: -0.015em;
-    color: #263238;
-}
-
-.home-subtitle{
-   font-size: 24px;
-   line-height: 33px;
-   letter-spacing: -0.015em;
-   color: #9E9E9E;
-   margin-top: 40px;
-}
-
-.home-button{
-    margin-top:40px;
+  from {
     width: 350px;
-    height: 70px;
-    letter-spacing: -0.015em;
-    font-size: 24px;
-    line-height: 33px;
-    color: #FFFFFF;
-    border-radius: 5px;
-    background: #DA5C5C;
-    border: none;
+    background: #da5c5c;
+  }
+  to {
+    width: 348px;
+    background: #a74b4b;
+  }
 }
 
-.imageView{
+.home-container {
+  display: block;
+  min-height: calc(100vh - 90px);
+  overflow-y: hidden;
+}
+
+.home-content {
+  display: flex;
+  margin: 55px 200px;
+}
+
+.home-container-title {
+  display: block;
+  width: 490px;
+}
+
+.home-title {
+  font-size: 55px;
+  line-height: 58px;
+  letter-spacing: -0.015em;
+  color: #263238;
+}
+
+.home-subtitle {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.015em;
+  color: #9e9e9e;
+  margin-top: 40px;
+}
+
+.home-button {
+  margin-top: 40px;
+  width: 350px;
+  height: 70px;
+  letter-spacing: -0.015em;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+  border-radius: 5px;
+  background: #da5c5c;
+  border: none;
+}
+
+.imageView {
+  display: none;
+}
+
+.imageNone {
+  height: 396px;
+}
+
+.home-button:hover {
+  animation: anima2 0.5s ease-in;
+}
+
+@media (min-width: 0px) and (max-width:400px) {
+  .home-title {
+      font-size: 27px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    .imageView {
+      height: 220px;
+
+    }
+
+    .home-subtitle {
+      font-size: 16px;
+      line-height: 25px;
+      margin-top: 20px;
+    }
+
+    .home-button {
+      margin-top: 20px;
+      width: 310px;
+      height: 50px;
+      font-size: 18px;
+      
+    }
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+  .home-content {
+    display: block;
+    margin: 20px 10px;
+  }
+  .home-container-title {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .imageNone {
     display: none;
+  }
+
+  .imageView {
+    display: block;
+    height: 300px;
+    width: 100%;
+  }
+
+  .home-title {
+    font-size: 35px;
+    line-height: 38px;
+    letter-spacing: -0.015em;
+    margin-bottom: 30px;
+  }
+
+  .home-subtitle {
+    margin-top: 20px;
+  }
+
+  .home-button {
+    margin-top: 30px;
+    padding: 0px 90px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+  }
+
+  .home-footer {
+    margin-top: 50px;
+    height: 85px;
+  }
 }
 
-.imageNone{
-    height: 396px;
+@media (min-width: 500px) and (max-width: 1332px) {
+  .home-content {
+    display: flex;
+    margin: 55px 100px;
+  }
+
+  .home-title {
+    font-size: 45px;
+    line-height: 48px;
+  }
+
+  .home-subtitle {
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+
+  .home-button {
+    margin-top: 40px;
+    width: 330px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .imageNone {
+    height: 386px;
+  }
 }
 
-.home-button:hover{
-    animation:anima2 0.5s ease-in;
-}
-
-
-@media (max-width: 950px) {
-    .home-content{
-        display: block;
-        margin: 50px 20px; 
-    }
-    .home-container-title{
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-    .imageNone{
-        display: none;
-    }
-
-    .imageView{
-        display: block;
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    .home-title{
-        font-size: 45px;
-        line-height: 48px;
-        letter-spacing: -0.015em;
-        margin-bottom: 50px;
-    
-    }
-
-    .home-subtitle{
-        margin-top: 50px;
-     }
-
-     .home-button{
-        margin-top:30px;
-        padding: 20px 90px;
-        font-size: 20px;
-        line-height: 30px;
-        border-radius: 10px;
-        
-    }
-
-    .home-footer{
-        margin-top: 50px;
-        height: 85px;
-    
-    
-    }
-}
