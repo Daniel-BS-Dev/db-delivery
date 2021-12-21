@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Product } from "./types";
 import { fetchProducts } from "./api";
 
+
 const ProductList = () => {
 
     const [products, setProducts] = useState<Product[]>([]);
@@ -18,7 +19,7 @@ const ProductList = () => {
          <div className="productList-container">
             <div className="content-items">
                 {products.map(product => (
-                    <ProductCard key={product.id} />
+                    <ProductCard key={product.id} product={product}/>
                 ))}
             </div>
          </div>

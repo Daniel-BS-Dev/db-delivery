@@ -1,19 +1,19 @@
-import {ReactComponent as Pizza} from '../../assets/pizza.svg';
+import { Product } from '../../pages/Order/types';
 
-const ProductCard = ( ) => {
+
+type Props = {
+    product: Product;
+}
+
+const ProductCard = ({product}:Props) => {
     return (
       <div className="card-container">
-         <h4 className="card-title">Pizza Calabresa</h4>
-         <Pizza className="card-image"/>
-         <h3 className="card-price">R$ 34,90</h3>
+         <h4 className="card-title">{product.name}</h4>
+         <img src={product.imageUri} alt={product.name} className="card-image"/>
+         <h3 className="card-price"> R$ {product.price}</h3>
          <div className="card-description">
             <h4 className="description-title">Descrição</h4>
-            <p className="description">Descrição Uma deliciosa combinação de
-             Linguiça Calabresa, rodelas de 
-             cebolas frescas, azeitonas
-             pretas, mussarela, polpa de
-             tomate, orégano e massa
-             especial.</p>
+            <p className="description">{product.description}</p>
         </div>
      </div>
     );
