@@ -13,16 +13,16 @@
 }
 
 .nav-title{
-    padding-left: 220px;
+    padding-left: 10%;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 34px;
     line-height: 34px;
     letter-spacing: -0.015em;
     color: #DA5C5C;
 }
 
 .nav-subtitle{
-    padding-left: 100px;
+    padding-left: 7%;
     list-style: none;
     font-size: 20px;
     line-height: 33px;
@@ -42,8 +42,8 @@
  }
 
  .nav-button{
-     width: 410px;
-     margin-left:80px;
+     width: 30%;
+     margin-left:10%;
      background: #DA5C5C;
      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
      border-radius: 10px;
@@ -56,11 +56,78 @@
  }
 
  .productList-container{
-    padding: 30px 220px;
+     display: flex;
+     justify-content: center;
+     padding-top: 30px;
+     
+     
+ }
+
+ .content-items{
+     width: 80%;
+     display: grid;
+     grid-template-columns: repeat(auto-fill, 235px);
+     grid-gap: 20px 4px;
+     justify-content: space-between;
+
+ }
+
+ .card-container{
+     display: block;
+     text-align: center;
+     background: #FFFFFF;
+     border-radius: 10px;
+     padding: 15px 10px 20px 10px;
+ }
+
+ .card-title{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    color: #DA5C5C;
+    padding-bottom: 15px;
+ }
+
+ .card-image{
+     width: 100%;
+     border-radius: 10px;
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+     
+ }
+
+ .card-price{
+     font-size: 24px;
+     line-height: 33px;
+     letter-spacing: -0.015em;
+     position: relative;
+     top: 15px;
+     right: 60px;
+     color: #DA5C5C;
+ }
+
+.card-description{
+    width: 90%;
+    padding-top: 30px;
+    text-align: left;
     
 }
 
-.productist-content{
-    
+.description-title{
+    border-top: 1px solid  #dfdfdf;
+    padding: 15px 0px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    color: #9E9E9E;
 
 }
+
+.description{
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    word-break: break-word;
+    text-align: justify;
+    color: #9E9E9E;
+}
+ 

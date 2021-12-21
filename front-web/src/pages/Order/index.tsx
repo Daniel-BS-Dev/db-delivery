@@ -7,7 +7,9 @@ const Order = () => {
     return(
       <div className='order-container'>
          <StepsNav />
+      <div className='CradProduct'>
          <ProductList />
+      </div>
       </div>
     );
 }

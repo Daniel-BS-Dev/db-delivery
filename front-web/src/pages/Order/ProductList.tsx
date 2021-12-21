@@ -1,11 +1,29 @@
+import ProductCard from "../../components/ProductCard";
 
 
 const ProductList = () => {
     return(
          <div className="productList-container">
-             <div className="productist-content">
-                 sdfgh
-             </div>
+            <div className="content-items">
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+            </div>
          </div>
     );
 }
