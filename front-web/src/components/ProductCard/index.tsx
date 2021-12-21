@@ -7,9 +7,10 @@ type Props = {
 
 function formatPrice(price: number){
     const formatter = new Intl.NumberFormat('pt-BR', {
-        style: 'currency',
-        currency: 'BRL'
-    });
+        style: 'currency', 
+        currency: 'BRL',  // tipo da moeda
+        maximumFractionDigits: 2 // numero de digitos
+});
 
     return formatter.format(price);
 }

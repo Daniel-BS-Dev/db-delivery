@@ -1,6 +1,7 @@
 .order-container{
     display: block;
     background: #F5F5F5;
+    
 }
 
 .nav-container{
@@ -77,7 +78,7 @@
      text-align: center;
      background: #FFFFFF;
      border-radius: 10px;
-     box-shadow: 1px 1px 4px rgba(0,0,0);
+     box-shadow: 1px 1px 10px rgba(0,0,0), -1px -1px 10px rgba(0,0,0);
      padding: 15px 10px 20px 10px;
  }
 
@@ -133,3 +134,38 @@
     color: #9E9E9E;
 }
  
+.orderLocalization-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.orderLocalization-content{
+    width: 80%;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 42px;
+    padding: 20px 10px 15px 10px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0,0,0), -1px -1px 10px rgba(0,0,0);
+    
+
+}
+
+.orderLocalization-content h3{
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #9E9E9E;
+}
+
+.orderLocalization-filter{
+    margin: 30px 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
