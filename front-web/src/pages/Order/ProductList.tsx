@@ -1,16 +1,14 @@
 //instalar o axios
 import ProductCard from "../../components/ProductCard";
 import { useEffect, useState } from "react";
-import { Product } from "./types";
 import { fetchProducts } from "./api";
 import ProductSkeleton from "../../components/skelecton";
-
+import { Product } from "./types";
 
 const ProductList = () => {
 
     const [products, setProducts] = useState<Product[]>([]);
     const [isLoader, setIsLoader] = useState(false);
-
     
     useEffect(() => {
       setIsLoader(true);
