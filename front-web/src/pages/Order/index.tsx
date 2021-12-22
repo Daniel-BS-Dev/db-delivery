@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Footer from '../../components/Footer';
 import OrderLocalization from './OrderLocalization';
+import OrderSummary from './orderSummary';
 import ProductList from './ProductList';
 import StepsNav from './stepsNav';
 import './styles.css';
@@ -16,6 +17,7 @@ const Order = () => {
          <StepsNav />
          <ProductList />
          <OrderLocalization onChangeLocation={location => setOrderLocation(location)}/>
+         <OrderSummary />
       </div>
     );
 }

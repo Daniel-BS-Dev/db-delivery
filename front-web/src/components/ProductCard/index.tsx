@@ -1,6 +1,5 @@
 import { Product } from '../../pages/Order/types';
 
-
 type Props = {
     product: Product;
 }
