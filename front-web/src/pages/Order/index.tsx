@@ -5,7 +5,7 @@ import OrderSummary from './orderSummary';
 import ProductList from './ProductList';
 import StepsNav from './stepsNav';
 import './styles.css';
-import { OrderLocationdata } from './types';
+import { OrderLocationdata} from './types';
 
 const Order = () => {
 
@@ -13,12 +13,15 @@ const Order = () => {
   const [orderLocation, setOrderLocation] = useState<OrderLocationdata>();
 
     return(
+      <>
       <div className='order-container'>
          <StepsNav />
          <ProductList />
          <OrderLocalization onChangeLocation={location => setOrderLocation(location)}/>
-         <OrderSummary />
+         <OrderSummary amount={} totalPrice={}/>
       </div>
+      <Footer />
+      </>
     );
 }
 

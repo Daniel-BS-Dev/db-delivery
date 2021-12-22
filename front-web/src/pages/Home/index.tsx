@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import './styles.css';
 
 const Home = () => (
+<>
    <div className="home-container">
        <div className="home-content">
            <div className="home-container-title">
@@ -22,9 +23,9 @@ const Home = () => (
             </div>
            <Image className='imageNone'/>
        </div>
-       <Footer />
    </div>
-   
+   <Footer />
+</>
 )
 
 export default Home;

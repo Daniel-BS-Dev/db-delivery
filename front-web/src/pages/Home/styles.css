@@ -11,13 +11,14 @@
 
 .home-container {
   display: block;
-  min-height: calc(100vh - 90px);
-  overflow-y: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 .home-content {
   display: flex;
   margin: 55px 200px;
+  overflow: hidden;
 }
 
 .home-container-title {
@@ -58,7 +59,7 @@
 }
 
 .imageNone {
-  height: 396px;
+  height: 410px;
 }
 
 .home-button:hover {

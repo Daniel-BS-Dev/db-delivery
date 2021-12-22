@@ -82,12 +82,23 @@
      padding: 15px 10px 20px 10px;
  }
 
+ .card-container.selected{
+   box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.4), -2px -2px 10px rgba(0, 142, 91, 0.4);
+   border-radius: 5px;
+   
+
+ }
+
  .card-title{
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.015em;
     color: #DA5C5C;
     padding-bottom: 15px;
+ }
+
+ .card-container.selected .card-title{
+   color:rgb(0, 142, 91);
  }
 
  .card-image{
@@ -98,6 +109,11 @@
      
  }
 
+ .card-container.selected .card-image{
+     border-radius: 5px;
+     box-shadow:  1px 1px 5px #008e5b, -1px -1px 5px #008e5b;
+ }
+
  .card-price{
      font-size: 24px;
      line-height: 33px;
@@ -106,6 +122,10 @@
      top: 15px;
      right: 60px;
      color: #DA5C5C;
+ }
+
+ .card-container.selected .card-price{
+    color: #008e5b;
  }
 
 .card-description{
@@ -125,6 +145,10 @@
 
 }
 
+.card-container.selected .description-title{
+    color:#008e5b;
+}
+
 .description{
     font-size: 15px;
     line-height: 22px;
@@ -132,6 +156,10 @@
     word-break: break-word;
     text-align: justify;
     color: #9E9E9E;
+}
+
+.card-container.selected .description{
+    color:#008e5b;
 }
  
 .orderLocalization-container{
@@ -184,8 +212,47 @@
 }
 
 .orderSummary-container{
-    width: 80%;
-    display: contents;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
+}
+
+.orderSummary-content{
+    width: 80%;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    background: #DA5C5C;
+    border-radius: 10px;
+}
+
+.orderSummary-title{
+    display: block;
+    font-size: 16px;
+    line-height: 105.18%;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+}
+
+.orderSummary-content p{
+    text-transform: uppercase;
+}
+
+.orderSummary-content p:first-child{
+    margin-bottom: 7px;
+}
+
+.orderSummary-content button{
+    padding: 5px 50px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    border: none;
+    color: #DA5C5C;
+    background-color: #FFFFFF;
+    border-radius: 5px;
 }
