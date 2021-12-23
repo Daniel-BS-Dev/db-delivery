@@ -32,6 +32,7 @@ const ProductList = () => {
         } else {
           setSelectedProducts(previous => [...previous, product]);
         }
+        
       }
 
     return(
