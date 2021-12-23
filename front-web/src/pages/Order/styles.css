@@ -218,7 +218,7 @@
 
 .map{
     width: 100%;
-    height: 100vh;
+    height:50vh;
     position: relative;
     z-index: 1;
 }
@@ -283,3 +283,107 @@
    
     
 }
+
+@media screen and (max-width:615px) and (min-width:150px){
+    .nav-container{
+        height: 110px;
+        display: block;
+        text-align: center;
+       
+    }
+
+    .nav-title{
+        padding-top: 2%;
+        font-size: 24px;
+        line-height: 23px;
+
+    }
+    
+    .nav-subtitle{
+        padding-top: 1%;
+        font-size: 16px;
+        line-height: 20px;
+
+       
+    }
+
+    .nav-subtitle strong{
+        font-size: 20px;
+        
+     }
+
+    .productList-container{
+        padding: 30px 0px;
+        
+        
+    }
+   
+    .content-items{
+        width: 95%;
+        grid-template-columns: repeat(auto-fill, 300px);
+        justify-content: space-around;
+    }
+
+    .card-container:hover{
+    background-color: #fff;
+   
+    }
+   
+    .card-image{
+        width: 95%;
+      
+    }
+   
+    .card-price{
+        top: 10px;
+        left: -80px;
+
+    }
+   
+   .card-description{
+       width: 100%;
+       padding-top: 10px;
+       
+     }
+   
+    .description{
+       font-size: 16px;
+       line-height: 18px;
+       
+    }
+   
+   .orderSummary-container{
+    padding-bottom: 0px;
+    text-align: center;
+    
+    }
+   
+    .orderSummary-content{
+        height: 120px;
+        width: 95%;
+        padding: 10px 0px;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    
+   
+   .orderSummary-title{
+       font-size: 20px;
+    
+   }
+   
+   .orderSummary-content button{
+       padding: 10px 100px;
+       margin-top: 10px;
+       }
+
+    .orderSummary-content button:hover{
+        cursor: pointer;
+        background-color: #efefdf;
+        box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.8);
+        animation:aminaButton 0.3s linear alternate-reverse;
+         
+    }
+    }

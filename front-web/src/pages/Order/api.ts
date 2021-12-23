@@ -1,8 +1,7 @@
 import axios from "axios";
 import { playloadOrder } from "./types";
 
-//const API_URI = 'https://dbdelivery.herokuapp.com';
-const API_URI = process.env.REACT_APP_API_URL;
+const API_URI = 'https://dbdelivery.herokuapp.com';
 const mapboxToken = process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX; //pegando o meu token
 
 // function que return os products
