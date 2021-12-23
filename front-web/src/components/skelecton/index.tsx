@@ -15,9 +15,7 @@ const ProductSkeleton = () => {
            foregroundColor="#ecebeb"
         >
     
-          <rect x="120" y="30" rx="10" ry="10" width="240" height="340" />
-          <rect x="400" y="30" rx="10" ry="10" width="240" height="340" />
-          
+          <rect x="50" y="30" rx="10" ry="10" width="240" height="340" />
          
        </ContentLoader>
     </>

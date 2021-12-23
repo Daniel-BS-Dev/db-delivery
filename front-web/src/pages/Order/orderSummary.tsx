@@ -17,7 +17,7 @@ const OrderSummary = ({amount, totalPrice, onSubmit}:Props) => {
                 <button
                   onClick={onSubmit}
                 >
-                    Fazer Pedido
+                    Pedir
                 </button>
             </div>
         </div>

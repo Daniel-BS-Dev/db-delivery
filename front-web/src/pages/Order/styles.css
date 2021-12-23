@@ -320,7 +320,7 @@
    
     .content-items{
         width: 95%;
-        grid-template-columns: repeat(auto-fill, 300px);
+        grid-template-columns: repeat(auto-fill, 200px);
         justify-content: space-around;
     }
 
@@ -329,14 +329,9 @@
    
     }
    
-    .card-image{
-        width: 95%;
-      
-    }
-   
     .card-price{
         top: 10px;
-        left: -80px;
+        left: -45px;
 
     }
    
@@ -344,30 +339,31 @@
        width: 100%;
        padding-top: 10px;
        
-     }
+    }
    
     .description{
        font-size: 16px;
        line-height: 18px;
        
-    }
+    } 
    
    .orderSummary-container{
-    padding-bottom: 0px;
-    text-align: center;
-    
+       width: 100%; 
+
     }
    
     .orderSummary-content{
-        height: 120px;
-        width: 95%;
-        padding: 10px 0px;
-        display: block;
-        text-align: center;
-        margin-bottom: 15px;
-        border-radius: 10px;
+       height: 125px;
+       width: 90%;
+       padding: 10px 10px;
+       display: block;
+       text-align: center;
+       margin-bottom: 15px;
+       border-radius: 10px;
+       padding-left: 2%;
+       padding-right: 2%;
+
     }
-    
    
    .orderSummary-title{
        font-size: 20px;
@@ -380,10 +376,7 @@
        }
 
     .orderSummary-content button:hover{
-        cursor: pointer;
-        background-color: #efefdf;
-        box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.8);
-        animation:aminaButton 0.3s linear alternate-reverse;
-         
-    }
+        box-shadow: none;
+
+       }
     }

@@ -17,7 +17,7 @@ const Home = () => (
                </p>
                <Link to="/order">
                   <button className="home-button">
-                    FAZER PEDIDO
+                    PEDIDOS
                   </button>
                 </Link>
             </div>
