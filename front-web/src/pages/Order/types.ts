@@ -1,3 +1,4 @@
+
 // atributos que será presentado quando chamar um produto com get
 export type Product = {
     id: number;
@@ -9,8 +10,17 @@ export type Product = {
 }
 
 // atributos quando for dar um post nos produtos
-export type OrderLocationdata = {
+export type OrderLocationData = {
    latitude: number,
    longitude: number,
    address: string
 }
+
+type ProductId = {
+    id: number;
+}
+
+export type playloadOrder = {
+    products: ProductId[]
+} & OrderLocationData;
+

@@ -9,9 +9,6 @@ const StepsNav = () => {
                <li><strong>1</strong>  Selecione os produtos e localização.</li>
                <li><strong>2</strong>  Depois clique em <span>“ENVIAR PEDIDO”</span></li>
            </ul>
-           <button className='nav-button'>
-               Pedido enviado com sucesso! Nº 5
-           </button>
        </nav>
     );
 }
