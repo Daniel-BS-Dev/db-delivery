@@ -1,26 +1,25 @@
 import ContentLoader from 'react-content-loader';
-import { generateList } from '../../utils/list';
+//import { generateList } from '../../utils/list';
 
 
 const ProductSkeleton = () => {
-    const laoderItems = generateList(4);
+    //const laoderItems = generateList(1);
 
     return(
     <>
-    {laoderItems.map(items =>(
         <ContentLoader
-           key={items} 
-           width={800}
+           width={1000}
            height={575}
-           viewBox="0 0 800 575"
+           viewBox="0 0 1000 575"
            backgroundColor="#9E9E9E"
            foregroundColor="#ecebeb"
         >
     
-          <rect x="12" y="58" rx="10" ry="10" width="240" height="340" />
+          <rect x="120" y="30" rx="10" ry="10" width="240" height="340" />
+          <rect x="400" y="30" rx="10" ry="10" width="240" height="340" />
+          
          
        </ContentLoader>
-    ))}
     </>
  )
 }
