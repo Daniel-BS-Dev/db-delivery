@@ -25,7 +25,7 @@ const Home = () => {
 
 const styles = StyleSheet.create({
     container: {
-      marginTop: '15%',
+      marginTop: '25%',
       alignItems: 'center',
     },
 
