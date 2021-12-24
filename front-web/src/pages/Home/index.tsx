@@ -11,7 +11,9 @@ const Home = () => (
                 <h1 className="home-title">
                    Faça seu pedido <br/>que entregamos <br/>pra você!!!
                </h1>
-               <Image className='imageView' />
+               <div className='divView' >
+                   <Image />
+               </div>
                <p className="home-subtitle">
                    Escolha o seu pedido e em poucos <br/>minutos levaremos na sua porta
                </p>

@@ -346,6 +346,11 @@
        line-height: 18px;
        
     } 
+
+    .orderLocalization-content{
+        width: 80%;
+        
+    }
    
    .orderSummary-container{
        width: 100%; 
