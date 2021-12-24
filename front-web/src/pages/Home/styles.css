@@ -80,7 +80,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1215px) {
+@media screen and (max-width: 1215px) and (min-width: 800px) {
   .home-content {
     margin-top: 25px;
     width: 90%;
@@ -121,9 +121,9 @@
 
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {  
+@media screen and (max-width:799px) and (min-width: 600px)  {  
   .home-content {
-    margin-top: 0px;
+    margin-top: 30px;
     width: 95%;
     display: block; 
   
@@ -131,34 +131,36 @@
   
   .home-container-title {
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     margin-top: 15px;
     text-align: center;
 
   }
   
   .home-title {
-    font-size: 30px;
-    line-height: 38px;
-    margin-bottom: 20px;
+    font-size: 55px;
+    line-height: 58px;
+    margin-bottom: 40px;
   }
   
   .home-subtitle {
-    font-size: 20px;
-    line-height: 27px;
-    padding-top: 50px;
+    font-size: 34px;
+    line-height: 38px;
+    padding-top: 20px;
+  
   }
   
   .home-button {
-    margin-top: 25px;
-    width: 19em;
-    height: 50px;
+    margin-top: 55px;
+    width: 21em;
+    height: 60px;
     font-size: 20px;
     
   }
   
   .divView {
     display:block;
+    width: 100%;
     text-align: center;
     height: 50%;
   }
@@ -170,7 +172,7 @@
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:599px) and (min-width: 450px) {
   .home-content {
     margin-top: 0px;
     width: 95%;
@@ -187,9 +189,63 @@
   }
   
   .home-title {
-    margin-top: 35px;
-    font-size: 30px;
+    margin-top: 15px;
+    font-size: 35px;
     line-height: 38px;
+    padding-bottom: 15px;
+    
+  }
+  
+  .home-subtitle {
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 10px;
+  }
+  
+  .home-button {
+    margin-top: 35px;
+    width: 15em;
+    height: 50px;
+    font-size: 20px;
+    
+  }
+  
+  .divView {
+    width: 100%;
+    height: 60vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  }
+
+  .imageNone {
+    display: none;
+    
+  }
+}
+
+@media screen and (max-width:449px) and (min-width: 321px) {
+  .home-content {
+    margin-top: 0px;
+    width: 95%;
+    display: block; 
+   
+  }
+  
+  .home-container-title {
+    width: 100%;
+    height: 100vh;
+    margin-top: 5px;
+    text-align: center;
+
+  }
+  
+  .home-title {
+    margin-top: 25px;
+    font-size: 32px;
+    line-height: 33px;
     margin-bottom: 5px;
   }
   
@@ -200,7 +256,7 @@
   }
   
   .home-button {
-    margin-top: 55px;
+    margin-top: 35px;
     width: 15em;
     height: 50px;
     font-size: 20px;
@@ -223,4 +279,108 @@
   }
 }
 
+@media screen and (max-width:320px) and (min-width: 281px) {
+  .home-content {
+    margin-top: 0px;
+    width: 95%;
+    display: block; 
+   
+  }
+  
+  .home-container-title {
+    width: 100%;
+    height: 100vh;
+    margin-top: 5px;
+    text-align: center;
 
+  }
+  
+  .home-title {
+    margin-top: 15px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .home-subtitle {
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 0px;
+  }
+  
+  .home-button {
+    margin-top: 25px;
+    width: 15em;
+    height: 50px;
+    font-size: 20px;
+    
+  }
+  
+  .divView {
+    width: 100%;
+    height: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  }
+
+  .imageNone {
+    display: none;
+    
+  }
+}
+
+@media screen and (max-width:280px) and (min-width: 0px) {
+  .home-content {
+    margin-top: 0px;
+    width: 95%;
+    display: block; 
+   
+  }
+  
+  .home-container-title {
+    width: 100%;
+    height: 100vh;
+    margin-top: 5px;
+    text-align: center;
+
+  }
+  
+  .home-title {
+    margin-top: 15px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .home-subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 0px;
+  }
+  
+  .home-button {
+    margin-top: 35px;
+    width: 10em;
+    height: 40px;
+    font-size: 18px;
+    
+  }
+  
+  .divView {
+    width: 100%;
+    height: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  }
+
+  .imageNone {
+    display: none;
+    
+  }
+}
