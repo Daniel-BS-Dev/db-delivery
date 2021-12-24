@@ -7,7 +7,7 @@ const StepsNav = () => {
            </h3>
            <ul className='nav-subtitle'>
                <li><strong>1</strong>  Selecione os produtos e localização.</li>
-               <li><strong>2</strong>  Depois clique em <span>“PEDIR”</span></li>
+               <li><strong>2</strong>  Depois clique em <span> “PEDIR”</span></li>
            </ul>
        </nav>
     );
