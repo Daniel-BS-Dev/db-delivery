@@ -1,7 +1,7 @@
 # Material Front end web
 
 ## Telas do Sistema
--Link Figma: https://www.figma.com/file/9KM3LJbfPU5OH4kEWbPqnC/SDS2-DevSuperior
+- Link Figma: https://www.figma.com/file/9KM3LJbfPU5OH4kEWbPqnC/SDS2-DevSuperior
 
 ## Criando Projeto com create-reat-app:
 ````
