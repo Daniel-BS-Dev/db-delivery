@@ -30,7 +30,7 @@
 .home-container-title {
   width: 40%;
   height: 150%;
-  margin-top: 30px;
+  margin-top: 50px;
   display: block;
   text-align: center;
   
@@ -183,10 +183,11 @@
     height: 100vh;
     margin-top: 5px;
     text-align: center;
-    
+
   }
   
   .home-title {
+    margin-top: 35px;
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 5px;
@@ -199,7 +200,7 @@
   }
   
   .home-button {
-    margin-top: 25px;
+    margin-top: 55px;
     width: 15em;
     height: 50px;
     font-size: 20px;
