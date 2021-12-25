@@ -1,9 +1,14 @@
 import React from 'react';
 import { Text, StyleSheet } from "react-native";
+import Header from '../Header';
 
 const Orders = () => {
     return (
-      <Text>Orders</Text>
+      <>
+         <Header />
+         <Text>Orders</Text>
+      </>
+     
     );
 }
 

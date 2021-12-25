@@ -1,23 +1,23 @@
-import React from 'react';
-import {Text} from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Orders from './pages/Orders';
 import Home from './pages/Home';
+import React from 'react';
 
-
-//para empilar as minhas rotas
 const Stack = createStackNavigator();
 
 const Routes = () => {
     return(
      <NavigationContainer>
-       <Stack.Navigator
-         screenOptions={{
-             cardStyle: {
-                 backgroundColor: '#FFF'
-             }
-         }}
+       <Stack.Navigator 
+          initialRouteName="Home"
+          screenOptions={{
+            headerShown:false,
+            cardStyle: {
+               backgroundColor: '#fff'
+            }
+          }}
+          
        >
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Orders" component={Orders} />
