@@ -16,8 +16,8 @@ foi feito um projeto de registro e entrega de pedidos, com a feature especial: t
 
 # Mobile
 ![mobileHome](https://user-images.githubusercontent.com/81425846/147394009-d46b2abb-6219-4739-8fa1-6e85e0c6da39.png)
-![mobileListOrder](https://user-images.githubusercontent.com/81425846/147394012-6508ab0e-377b-4291-aa38-2395f32e75ce.png)
 ![mobileDelivery](https://user-images.githubusercontent.com/81425846/147394014-6201731b-b76e-4559-8303-78d80ffbcc2b.png)
+![mobileListOrder](https://user-images.githubusercontent.com/81425846/147394012-6508ab0e-377b-4291-aa38-2395f32e75ce.png)
    
 # Tecnologias Utilizadas 
 ### Back end
