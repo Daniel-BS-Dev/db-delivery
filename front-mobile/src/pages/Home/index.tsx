@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View, Image } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
-import Header from '../Header';
+import Header from '../../components/Header';
 import React from 'react';
 
 

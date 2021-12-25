@@ -1,6 +1,6 @@
 import {StyleSheet, View, Text} from "react-native";
 import relativeTime from 'dayjs/plugin/relativeTime';
-import { Order } from "../types";
+import { Order } from "../../types";
 import 'dayjs/locale/pt-br';
 import dayjs from 'dayjs';
 import React from 'react';

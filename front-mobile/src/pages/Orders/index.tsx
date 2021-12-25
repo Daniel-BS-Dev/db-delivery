@@ -1,10 +1,12 @@
-import { StyleSheet, ScrollView, Text, Alert} from "react-native";
-import React, { useEffect, useState } from 'react';
-import { fetchOrders } from '../../api';
-import OrderCard from '../../OrderCard';
-import { Order } from "../../types";
-import Header from '../Header';
 import { TouchableWithoutFeedback } from "react-native-gesture-handler";
+import { StyleSheet, ScrollView, Text, Alert} from "react-native";
+import { useNavigation  } from "@react-navigation/native";
+import OrderCard from '../../components/OrderCard';
+import React, { useEffect, useState } from 'react';
+import Header from '../../components/Header';
+import { fetchOrders } from '../../api';
+import { Order } from "../../types";
+
 
 const Orders = () => {
   const [order, setOrder] = useState<Order[]>([]);
@@ -17,6 +19,12 @@ const Orders = () => {
     .catch(() => Alert.alert('Houve uma erro'))
     .finally(() => setIsLoading(false));
   }, []);
+
+  const navigation = useNavigation();
+
+  function handleOnPress(order: Order){
+     navigation.navigate('OrderDetails', {order});
+  }
     return (
       <>
          <Header />
@@ -24,7 +32,7 @@ const Orders = () => {
             {isLoading ? (
                <Text style={styles.text}> Carregando... </Text>
                ) : ( order.map(order => (
-              <TouchableWithoutFeedback key={order.id}>
+              <TouchableWithoutFeedback key={order.id} onPress={() => handleOnPress(order)}>
                 <OrderCard order={order}/> 
               </TouchableWithoutFeedback>
             )))}
