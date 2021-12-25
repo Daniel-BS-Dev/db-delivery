@@ -51,7 +51,7 @@ const Order = () => {
     const productsIds = selectedProducts.map(({ id }) => ({ id }));
     const playload = {
       ...orderLocation!,
-      products: productsIds
+      listProductDTO: productsIds
     }
   
     saveOrder(playload).then((response) => {

@@ -21,6 +21,6 @@ type ProductId = {
 }
 
 export type playloadOrder = {
-    products: ProductId[]
+    listProductDTO: ProductId[]
 } & OrderLocationData;
 

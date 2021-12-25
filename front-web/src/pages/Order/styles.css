@@ -290,7 +290,6 @@
 
 .orderSummary-content button:hover{
     cursor: pointer;
-    background-color: #efefdf;
     box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.8);
     animation:aminaButton 0.3s linear alternate-reverse;
    
