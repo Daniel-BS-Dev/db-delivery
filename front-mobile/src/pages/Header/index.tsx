@@ -9,13 +9,14 @@ const Header = () => {
   const handleOnPress = () => {
      navigation.navigate('Home');
   }
+
    return(
-    <TouchableWithoutFeedback onPress={handleOnPress}>
-      <View style={styles.container}>
-        <Image source={require('../../assets/logo.png')}/>
-        <Text style={styles.image}>DB DELIVERY</Text>
-      </View> 
-    </TouchableWithoutFeedback>
+      <TouchableWithoutFeedback onPress={handleOnPress}>
+         <View style={styles.container}>
+           <Image source={require('../../assets/logo.png')}/>
+           <Text style={styles.image}>DB DELIVERY</Text>
+         </View> 
+      </TouchableWithoutFeedback>
  );
 }
 const styles = StyleSheet.create({

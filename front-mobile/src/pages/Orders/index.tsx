@@ -1,12 +1,20 @@
 import React from 'react';
-import { Text, StyleSheet } from "react-native";
+import { StyleSheet, ScrollView} from "react-native";
+import OrderCard from '../../OrderCard';
 import Header from '../Header';
 
 const Orders = () => {
     return (
       <>
          <Header />
-         <Text>Orders</Text>
+         <ScrollView style={styles.container}>
+            <OrderCard /> 
+            <OrderCard /> 
+            <OrderCard /> 
+            <OrderCard /> 
+            <OrderCard /> 
+         </ScrollView>
+               
       </>
      
     );
@@ -14,7 +22,9 @@ const Orders = () => {
 
 const styles = StyleSheet.create({
     container: {
-      flex:1,
+      backgroundColor: '#F5F5F5',
+      paddingLeft: '5%',
+      paddingRight: '5%',
     },
   });
 

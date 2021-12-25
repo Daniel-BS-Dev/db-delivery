@@ -10,11 +10,11 @@ const Home = () => {
    const navigator = useNavigation();
 
    const handleOnPress = () => {
-      navigator.navigate('Orders');
+      navigator.navigate("Orders");
    }
 
     return (
-        <>
+      <>
         <Header />
         <View style={styles.container}>
            <Image source={require('../../assets/deliveryman.png')} />
@@ -26,7 +26,7 @@ const Home = () => {
               <Text style={styles.buttonText}>VER PEDIDO</Text>
            </RectButton>
         </View>
-        </>
+      </>
     );
 }
 
