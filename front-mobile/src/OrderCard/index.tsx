@@ -4,6 +4,10 @@ import { Order } from "../types";
 import 'dayjs/locale/pt-br';
 import dayjs from 'dayjs';
 import React from 'react';
+import "intl";
+import { Platform } from "react-native";
+import "intl/locale-data/jsonp/en";
+
 
 dayjs.locale('pt-br');
 dayjs.extend(relativeTime);
@@ -12,9 +16,27 @@ type Props = {
     order: Order;
    
 }
-
+//formatar data
 function dateFormat(date: string){
   return dayjs(date).fromNow();
+}
+//para que o intl funcione. tento que baixar as dependencias
+if (Platform.OS === "android") {
+    // See https://github.com/expo/expo/issues/6536 for this issue.
+    if (typeof (Intl as any).__disableRegExpRestore === "function") {
+        (Intl as any).__disableRegExpRestore();
+    }
+}
+
+//formatar priço
+function formatPrice(price: number){
+    const formatter = new Intl.NumberFormat('pt-BR',{
+        style: 'currency',
+        currency: 'BRL',
+        minimumFractionDigits: 2
+    });
+
+    return formatter.format(price);
 }
 
 const OrderCard = ({order}: Props) => {
@@ -22,7 +44,7 @@ const OrderCard = ({order}: Props) => {
         <View style={styles.container}>
            <View style={styles.header}>
               <Text style={styles.orderName}>Pedido {order.id}</Text>  
-              <Text style={styles.orderPrice}>R$ {order.totalPrice}</Text>
+              <Text style={styles.orderPrice}>{formatPrice(order.totalPrice)}</Text>
            </View>
               <Text style={styles.text}>{dateFormat(order.moment)}</Text>
            <View style={styles.productsList}>
