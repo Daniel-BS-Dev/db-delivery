@@ -1,6 +1,6 @@
 import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 import { StyleSheet, ScrollView, Text, Alert} from "react-native";
-import { useNavigation  } from "@react-navigation/native";
+import { useIsFocused, useNavigation  } from "@react-navigation/native";
 import OrderCard from '../../components/OrderCard';
 import React, { useEffect, useState } from 'react';
 import Header from '../../components/Header';
@@ -11,14 +11,21 @@ import { Order } from "../../types";
 const Orders = () => {
   const [order, setOrder] = useState<Order[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const isFocused = useIsFocused(); // força o recarrgamento da pagina 
 
-  useEffect(() => {
+  const fetchData = () => {
     setIsLoading(true);
     fetchOrders()
     .then(response => setOrder(response.data))
     .catch(() => Alert.alert('Houve uma erro'))
     .finally(() => setIsLoading(false));
-  }, []);
+  }
+
+  useEffect(() => {
+    if(isFocused){
+      fetchData();
+    }
+  }, [isFocused]);
 
   const navigation = useNavigation();
 
