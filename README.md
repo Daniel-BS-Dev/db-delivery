@@ -11,14 +11,19 @@ foi feito um projeto de registro e entrega de pedidos, com a feature especial: t
 ![delivers](https://user-images.githubusercontent.com/81425846/147393998-21acb5f0-c6a9-42e9-8b4d-5c3143289234.png)
 
 # Front end 
-
+## Home
 ![endHome](https://user-images.githubusercontent.com/81425846/147394002-fe1d66f6-69fe-40f5-864f-baed32f10d91.png)" 
+## Lista de Produtos
 ![endProduct](https://user-images.githubusercontent.com/81425846/147394004-5949506f-1ecb-4fee-bc1c-2026b40bec89.png)
 
 # Mobile
+## Home
 ![mobileHome](https://user-images.githubusercontent.com/81425846/147394009-d46b2abb-6219-4739-8fa1-6e85e0c6da39.png)
-![mobileDelivery](https://user-images.githubusercontent.com/81425846/147394014-6201731b-b76e-4559-8303-78d80ffbcc2b.png)
+## Lista de Pedidos
 ![mobileListOrder](https://user-images.githubusercontent.com/81425846/147394012-6508ab0e-377b-4291-aa38-2395f32e75ce.png)
+## Entrega
+![mobileDelivery](https://user-images.githubusercontent.com/81425846/147394014-6201731b-b76e-4559-8303-78d80ffbcc2b.png)
+
    
 # Tecnologias Utilizadas 
 ### Back end
